@@ -1,17 +1,18 @@
 # About Writing Academic Paper
 
+![Keep calm and write on](https://gitlab.com/dr-guangtou/taotie/blob/master/doc/images/keep_calm_write_on.png)
+
 ## Basics
 
 * [Notes on writing papers by Prof. Alexie Leauthaud](https://github.com/alexieleauthaud/RedWoodTools/wiki/Writing-Papers)
 
-## Examples 
+### Examples
 
-* Good example of papers: 
+* Good example of papers with good reproducibility:
+    - [STARRY: Analytic Occultation Light Curves](https://ui.adsabs.harvard.edu/#abs/arXiv:1810.06559)
+    * Format, equation, figure, open source code, and awesomefont links.
 
-- [STARRY: Analytic Occultation Light Curves](https://ui.adsabs.harvard.edu/#abs/arXiv:1810.06559)
-  * Format, equation, figure, open source code, and awesomefont links.
-
-## English 
+## English
 
 - [Grammarly](https://www.grammarly.com)
 - [Linguee - Good place to search for example usage of a word](https://en.linguee.com/english-chinese)
@@ -27,19 +28,36 @@
 
 * [PDF Compressor](https://pdfcompressor.com)
   - This is useful when you want to compress the quality of a figure.
-  
- * [Tabula - Tool for liberating data tables locked inside PDF files](https://tabula.technology)
- 
-## LaTeX resources 
+
+* [Tabula - Tool for liberating data tables locked inside PDF files](https://tabula.technology)
+
+## LaTeX
+
+### Online LaTeX Editor
+
+* [Overleaf](https://www.overleaf.com)
+  - The most commonly used one. The free service is already very good.
+
+* [Authorea](https://www.authorea.com/)
+  - A powerful publishing platform for articles, data, figures, preprints. More than just a LaTeX editor.
+
+### LaTeX resources
 
 * [Complete list of LaTeX symbols (PDF)](https://math.uoregon.edu/wp-content/uploads/2014/12/compsymb-1qyb3zd.pdf)
 * [List of LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
 
-* [LaTeX open book on WikiBooks](https://en.wikibooks.org/wiki/LaTeX) 
+* [LaTeX open book on WikiBooks](https://en.wikibooks.org/wiki/LaTeX)
   - Very good place to search for basic usage.
 * [List of color names in LaTeX along with other useful tips about color](https://en.wikibooks.org/wiki/LaTeX/Colors)
 
-## Useful LaTeX tips
+### Useful LaTeX tips
 
 * [Link to aribitary part of text](https://tex.stackexchange.com/questions/280462/link-to-arbitrary-part-of-text)
-  - Using `\hypertarget` and `\hyperlink`
+  - Using __\hypertarget__ and __\hyperlink__
+
+## Figure
+
+### Flowchart
+
+* [__mermaid__ - Generation of diagram and flowchart from text in a similar manner as markdown](https://github.com/knsv/mermaid)
+    - __mermaid__, a simple markdown-like script language for generating charts from text via javascript.

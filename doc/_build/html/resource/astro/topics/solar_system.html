@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Planet Science and Small Bodies in the Solar System &#8212; Taotie 0.1 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="All about Lensing: Strong, Weak, and Micro" href="lensing.html" />
+    <link rel="prev" title="Solar Physics and Space Science" href="solar_physics.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="planet-science-and-small-bodies-in-the-solar-system">
+<h1>Planet Science and Small Bodies in the Solar System<a class="headerlink" href="#planet-science-and-small-bodies-in-the-solar-system" title="Permalink to this headline">¶</a></h1>
+<p><strong>Just started</strong></p>
+<hr class="docutils" />
+<div class="section" id="for-astrophysicists-who-is-mainly-interested-in-identifying-getting-rid-of-known-asteroids-in-their-data">
+<h2>For astrophysicists who is mainly interested in identifying/getting rid of known asteroids in their data:<a class="headerlink" href="#for-astrophysicists-who-is-mainly-interested-in-identifying-getting-rid-of-known-asteroids-in-their-data" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Web-based service, good for just checking a few targets: <a class="reference external" href="https://www.minorplanetcenter.net/cgi-bin/checkmp.cgi">IAU Minor
+Planet Center – Minor Planet
+Checker</a></p>
+<ul>
+<li><p>Only accept certain formats (coordinates need to be sexagesimal,
+or you need to format your observations in <a class="reference external" href="https://www.minorplanetcenter.net/iau/info/OpticalObs.html">MPC80COL
+format</a>)</p></li>
+<li><p>No (officially supported) API</p></li>
+</ul>
+</li>
+<li><p>Command-line program that can be executed locally:
+<a class="reference external" href="https://www.projectpluto.com/pluto/devel/astcheck.htm">astcheck</a></p>
+<ul>
+<li><p>If you need to check for asteroids regularly and/or have a large
+number of targets, this is for you</p></li>
+<li><p>You do need to maintain an up-to-date copy of either the <a class="reference external" href="ftp://ftp.lowell.edu/pub/elgb/astorb.html">ASTORB
+dataset</a> or the
+<a class="reference external" href="http://www.projectpluto.com/mpcorb.htm">MPCORB dataset</a></p></li>
+<li><p>Be careful about the epochs: it only works when the epoch of your
+observation matches/is near the epoch of the ASTORB/MPCORB
+dataset. In other words, be careful if you are checking archival
+data (you will need to integrate the orbits back to the epoch you
+want – use
+<a class="reference external" href="https://www.projectpluto.com/pluto/integrat.htm">integrat</a> to
+do that)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="small-bodies">
+<h2>Small Bodies<a class="headerlink" href="#small-bodies" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="asteroid-and-near-earth-object-survey">
+<h3>Asteroid and Near-Earth Object Survey<a class="headerlink" href="#asteroid-and-near-earth-object-survey" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.minorplanetcenter.net/">IAU Minor Planet Center</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.minorplanetcenter.net/iau/NEO/toconfirm_tabular.html">NEO Confirmation
+Page</a></p></li>
+<li><p><a class="reference external" href="https://www.minorplanetcenter.net/iau/NEO/pccp_tabular.html">Possible Comet Confirmation
+Page</a></p></li>
+<li><p><a class="reference external" href="https://www.minorplanetcenter.net/db_search">Minor Planet
+Database</a></p></li>
+<li><p><a class="reference external" href="https://www.minorplanetcenter.net/cgi-bin/checkmp.cgi">MPChecker – checking for known
+asteroids/comets</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://cneos.jpl.nasa.gov/">NASA/JPL Center for Near Earth Object
+Studies</a></p>
+<ul>
+<li><p><a class="reference external" href="https://ssd.jpl.nasa.gov/horizons.cgi">Small-Body Database</a></p>
+<ul>
+<li><p><a class="reference external" href="https://astroquery.readthedocs.io/en/latest/jplhorizons/jplhorizons.html">PYTHON wrapper:
+astroquery.jplhorizons</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://cneos.jpl.nasa.gov/sentry/">SENTRY – impact risk of known
+objects</a></p></li>
+<li><p><a class="reference external" href="https://cneos.jpl.nasa.gov/scout/#/">SCOUT – impact risk of to-be-confirmed
+objects</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://newton.spacedys.com/neodys/index.php?pc=7.0">ESA NEODyS</a></p></li>
+</ul>
+<div class="section" id="minor-planet-center-related-be-aware-may-be-outdated-not-maintained">
+<h4>Minor Planet Center Related (be aware: may be outdated/not maintained)<a class="headerlink" href="#minor-planet-center-related-be-aware-may-be-outdated-not-maintained" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">`mpc-fetch.py</span></code> - fetches properties of all objects that match
+search params &lt;<a class="reference external" href="https://minorplanetcenter.net/mpc-fetch.py">https://minorplanetcenter.net/mpc-fetch.py</a>&gt;`__</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">`astroquery.mpc</span></code> - Minor Planet Center
+Queries &lt;<a class="reference external" href="https://astroquery.readthedocs.io/en/latest/mpc/mpc.html">https://astroquery.readthedocs.io/en/latest/mpc/mpc.html</a>&gt;`__</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">`mpc-client</span></code> - A python client for the Minor Planet Center’s MPC
+web service &lt;<a class="reference external" href="https://github.com/qdonnellan/mpc-client">https://github.com/qdonnellan/mpc-client</a>&gt;`__</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="characterization">
+<h3>Characterization<a class="headerlink" href="#characterization" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://photometrypipeline.readthedocs.io/en/latest/">PYTHON – Photometry
+Pipeline</a></p></li>
+<li><p><a class="reference external" href="https://github.com/matvii/ADAM">ADAM</a> – asteroid shape
+reconstruction from resolved observations</p></li>
+</ul>
+</div>
+<div class="section" id="general-tools">
+<h3>General Tools<a class="headerlink" href="#general-tools" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/NASA-Planetary-Science/sbpy">sbpy - A Python package for small bodies
+research</a></p>
+<ul>
+<li><p><strong>sbpy</strong> is a community effort to build a Python package for
+small-body planetary astronomy in the form of an astropy
+affiliated package. See the <a class="reference external" href="http://mommermi.github.io/">sbpy website for
+more</a></p></li>
+<li><p>Include functionalities for planning observations, modeling
+photometry, fitting astrometry and orbit, analysing spectroscopic
+data, simulating and analysing cometary gas and dust coma,
+estimating size/albedo of asteroid, enhancing images, and
+analysing lightcurve.</p></li>
+<li><p><a class="reference external" href="https://github.com/NASA-Planetary-Science/sbpy-tutorial">sbpy Tutorials and Workshops
+Materials</a></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="solar-system-geometry">
+<h4><a class="reference external" href="https://naif.jpl.nasa.gov/naif/solar_system_geometry.pdf">Solar System Geometry</a><a class="headerlink" href="#solar-system-geometry" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://naif.jpl.nasa.gov/naif/">SPICE - An Observation Geometry System for Space Science
+Missions</a></p>
+<ul>
+<li><p>NASA’s Navigation and Ancillary Information Facility (NAIF) offers
+NASA flight projects and NASA funded researchers an observation
+geometry information system named “SPICE” to assist scientists in
+planning and interpreting scientific observations from space-based
+instruments aboard robotic planetary spacecraft.</p></li>
+<li><p><a class="reference external" href="https://naif.jpl.nasa.gov/naif/toolkit.html">The SPICE
+Toolkit</a> is
+available in C, Fortran, IDL, and Matlab.</p></li>
+<li><p><a class="reference external" href="https://github.com/AndrewAnnex/SpiceyPy">SpiceyPy - Python wrapper for the NAIF C SPICE
+Toolkit</a></p>
+<ul>
+<li><p><a class="reference external" href="https://spiceypy.readthedocs.io/en/master/">Online document can be found
+here</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="object-detection">
+<h4>Object Detection<a class="headerlink" href="#object-detection" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/esaSPICEservice/spiops">spiops - Extension of SPICE functionalities for ESA
+Missons</a></p>
+<ul>
+<li><p><strong>spiops</strong> is a library aimed to help scientists and engineers
+that deal with Solar System Geometry mainly for planetary science</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/NASA-Planetary-Science/SALTAD">SALTAD</a></p>
+<ul>
+<li><p><strong>SALTAD</strong> is comprised of a series of C language function modules
+for image processing multiframe image data to detect moving
+asteroids in a star cluttered background.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="planets">
+<h2>Planets<a class="headerlink" href="#planets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://planetarynames.wr.usgs.gov/">Gazetteer of Planetary
+Nomenclature</a></p>
+<ul>
+<li><p>The Gazetteer of Planetary Nomenclature is maintained by the
+Planetary Geomatics Group of the USGS Astrogeology Science Center.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="modeling-and-simulating-planet">
+<h3>Modeling and Simulating Planet<a class="headerlink" href="#modeling-and-simulating-planet" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/physicsguy42/BEAM_beta">Beam - A Monte Carlo Radiative Transfer Code for studies of Saturn’s
+Rings</a></p></li>
+<li><p><a class="reference external" href="https://minorplanetcenter.net/mpc-fetch.py">mpc-fetch.py - fetches properties of all objects that match search
+params</a></p></li>
+<li><p><a class="reference external" href="https://astroquery.readthedocs.io/en/latest/mpc/mpc.html">astroquery.mpc - Minor Planet Center
+Queries</a></p></li>
+<li><p><a class="reference external" href="https://github.com/qdonnellan/mpc-client">mpc-client - A python client for the Minor Planet Center’s MPC web
+service</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">Taotie</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../research/getting_started.html">Getting Started as a Researcher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../research/computer_basics.html">Setting Up a Computer Environment for Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../research/job_and_career.html">Job Search and Career Related</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../research/writing_paper.html">About Writing Academic Paper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stats_data_ml.html">Statistics, Data Science, &amp; Machine Learning</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../astro_readme.html">Astro README.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../astro_research_basic.html">Basic Tools for Astrophysical Research</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../astro_topic.html">Resources and Tools for a Specific Topic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../astro_project.html">Resources about Important Astrophysical and Cosmological Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../astro_reading.html">Reading List for a Specific Topic</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../python.html">Everything about Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programing/clang_basic.html">C Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programing/cpp_basic.html">C++ Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programing/julia_basic.html">The Julia Programming Language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programing/numerical_method.html">Resources and Tools for Numerical Method and Scientific Computing</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../research/getting_started_cn.html">如何正确地踏上天文科研的不归路</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../../astro_topic.html">Resources and Tools for a Specific Topic</a><ul>
+      <li>Previous: <a href="solar_physics.html" title="previous chapter">Solar Physics and Space Science</a></li>
+      <li>Next: <a href="lensing.html" title="next chapter">All about Lensing: Strong, Weak, and Micro</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Song Huang.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/resource/astro/topics/solar_system.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
